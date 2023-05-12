@@ -29,9 +29,4 @@ function levenshtein(str1, str2) {
 
 }
 
-// const str1 = 'a';
-// const str2 = 'CONHEÇA O PROGRAMA FAMILIA ACOLHEDORA Clique aqui para saber mais +';
-
-// console.log(levenshtein(str1, str2))
-
 module.exports = levenshtein;

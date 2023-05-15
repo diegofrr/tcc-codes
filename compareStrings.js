@@ -15,6 +15,7 @@ const levenshtein = require('./levenshtein-distance');
 //     console.log(distance);
 // })
 
+const list = []
 
 for (i in correct_texts) {
     const text = correct_texts[i];
@@ -24,5 +25,10 @@ for (i in correct_texts) {
     const dist_1 = levenshtein(text1, text);
     const dist_2 = levenshtein(text2, text);
 
-    console.log(dist_1 + ',' + dist_2)
+    const imgId = Number(i) + 1;
+    console.log(`${imgId} ${dist_2} ${dist_1}`)
+    list.push(dist_2, dist_1)
+    // console.log(Number(i) + 1)
 }
+
+// console.log(list.length)

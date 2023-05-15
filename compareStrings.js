@@ -27,7 +27,7 @@ for (i in correct_texts) {
 
     const imgId = Number(i) + 1;
     console.log(`${imgId} ${dist_2} ${dist_1}`)
-    list.push(dist_2, dist_1)
+    // list.push(dist_2, dist_1)
     // console.log(Number(i) + 1)
 }
 
